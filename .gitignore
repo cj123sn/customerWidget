@@ -1,0 +1,21 @@
+###############
+#  fixed file #
+###############
+
+*.pro.user
+build-*
+bin/log
+bin/T2GZ.exe
+bin/Excel
+
+bin_debug/log
+bin_debug/T2GZ.exe
+bin_debug/Excel
+
+temp
+log
+
+*-Profile
+*-Debug
+*-Release
+.gitattributes

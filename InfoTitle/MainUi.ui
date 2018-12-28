@@ -35,8 +35,8 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>300</y>
+     <x>80</x>
+     <y>320</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -45,23 +45,28 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="JWidget" name="widget" native="true">
+  <widget class="JSwitchTitle" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>40</y>
-     <width>391</width>
-     <height>191</height>
+     <x>300</x>
+     <y>180</y>
+     <width>321</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget{
+	border:2px solid red;
+}</string>
    </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>JWidget</class>
+   <class>JSwitchTitle</class>
    <extends>QWidget</extends>
-   <header>JWidget.h</header>
+   <header>SwitchTitle/JSwitchTitle.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

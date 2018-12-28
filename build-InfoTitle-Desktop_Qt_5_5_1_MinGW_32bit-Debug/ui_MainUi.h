@@ -16,7 +16,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
-#include "JWidget.h"
+#include "SwitchTitle/JSwitchTitle.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -25,7 +25,7 @@ class Ui_MainUi
 public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
-    JWidget *widget;
+    JSwitchTitle *widget;
 
     void setupUi(QWidget *MainUi)
     {
@@ -39,10 +39,13 @@ public:
         pushButton->setGeometry(QRect(80, 280, 75, 23));
         pushButton_2 = new QPushButton(MainUi);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(300, 300, 75, 23));
-        widget = new JWidget(MainUi);
+        pushButton_2->setGeometry(QRect(80, 320, 75, 23));
+        widget = new JSwitchTitle(MainUi);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(390, 40, 391, 191));
+        widget->setGeometry(QRect(300, 180, 321, 51));
+        widget->setStyleSheet(QLatin1String("QWidget#widget{\n"
+"	border:2px solid red;\n"
+"}"));
 
         retranslateUi(MainUi);
 

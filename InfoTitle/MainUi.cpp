@@ -6,8 +6,9 @@ MainUi::MainUi(QWidget *parent) :
     ui(new Ui::MainUi)
 {
     ui->setupUi(this);
-    ui->widget->setIconSize(64);
-    ui->widget->setIconPath(":/res/png/4.jpg");
+    QStringList titles;
+    titles<<"标题1"<<"标题2"<<"标题3"<<"标题4";
+    ui->widget->addTitles(titles);
 }
 
 MainUi::~MainUi()

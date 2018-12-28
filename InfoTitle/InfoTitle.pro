@@ -16,10 +16,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         MainUi.cpp \
-    JWidget.cpp
+    JWidget.cpp \
+    SwitchTitle/JSwitchTitle.cpp \
+    JPushButton.cpp \
+    JLabel.cpp
 
 HEADERS  += MainUi.h \
-    JWidget.h
+    JWidget.h \
+    SwitchTitle/JSwitchTitle.h \
+    JPushButton.h \
+    JLabel.h
 
 FORMS    += MainUi.ui
 
