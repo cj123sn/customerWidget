@@ -12,12 +12,11 @@ JSwitchTitle::JSwitchTitle(QWidget *parent) : QWidget(parent)
     qDebug()<<"w"<<this->width();
     qDebug()<<"h"<<this->height();
     m_pHLayout->setContentsMargins(20,9,20,9);
+    m_pHLayout->setSpacing(20);
     m_pLine = new QLabel(this);
     m_pLine->setStyleSheet("background-color: rgb(55, 174, 254);");
     m_pLine->hide();
     m_pLabMv = new QPropertyAnimation(m_pLine,"geometry");
-    //m_pLine->hide();
-
 }
 
 void JSwitchTitle::addTitles(QStringList titles)
@@ -58,7 +57,7 @@ void JSwitchTitle::slotTitleClicked()
     }
     else
     {
-        m_pLabMv->setDuration(500);
+        m_pLabMv->setDuration(1000);
         m_lineNew = QRect(labTopLeft,labSize);
         m_pLabMv->setStartValue(m_lineOld);
         m_pLabMv->setEndValue(m_lineNew);

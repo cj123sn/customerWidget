@@ -42,7 +42,7 @@ public:
         pushButton_2->setGeometry(QRect(80, 320, 75, 23));
         widget = new JSwitchTitle(MainUi);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(300, 180, 321, 51));
+        widget->setGeometry(QRect(300, 180, 401, 101));
         widget->setStyleSheet(QLatin1String("QWidget#widget{\n"
 "	border:2px solid red;\n"
 "}"));

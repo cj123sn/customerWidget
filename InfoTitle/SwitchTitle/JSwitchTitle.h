@@ -2,7 +2,6 @@
 #define JSWITCHTITLE_H
 
 #include <QWidget>
-#include <QButtonGroup>
 
 class QHBoxLayout;
 class QLabel;
