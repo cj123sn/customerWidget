@@ -1,5 +1,5 @@
 # customerWidget
-CJ自定义控件,原生widget开始绘制,参照康铭泰克的前辈
+CJ自定义控件,原生widget开始绘制
 
 #InfoTitle 
 动态下划线标题栏
